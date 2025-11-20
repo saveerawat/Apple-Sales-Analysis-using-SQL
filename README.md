@@ -1,4 +1,6 @@
 # Apple-Sales-Analysis-using-SQL
+# Project Overview
+This project demonstrates advanced SQL analysis on a dataset of 1M+ Apple retail sales across global stores. It explores product performance, store trends, sales patterns, and warranty claim behaviors using real-world business queries.
 
 **1. Database Setup**
 <img width="1101" height="631" alt="erd" src="https://github.com/saveerawat/Apple-Sales-Analysis-using-SQL/blob/main/erd.png" />
@@ -84,7 +86,7 @@ WHERE sale_date='2021-02-24';
 CREATE INDEX sales_sale_date ON sales(sale_date);
 ```
 
-**4. Business Problems**
+**4. Business Problems**<br>
 **1. Find the number of stores in each country.**
 ```sql
 SELECT country, COUNT(store_id) AS store_count
